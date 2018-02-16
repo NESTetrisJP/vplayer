@@ -1,0 +1,15 @@
+{
+  "_author": "fridaywitch, suitougreentea",
+  "name": "vJonas (WIP)",
+  "params": {
+    "use_drop": 0,
+    "lines_18_safe": [0.4, 0.1, 0.1, 0.4],
+    "lines_19_safe": [0.4, 0.2, 0.15, 0.25],
+    "lines_18_danger": [0.6, 0.2, 0.1, 0.1],
+    "lines_19_danger": [0.7, 0.15, 0.1, 0.05],
+    "lines_29": [0.7, 0.15, 0.1, 0.05],
+    "safe_to_danger": [0.02, 0.05, 0.4],
+    "danger_to_safe": [0.05, 0.02, 0],
+    "danger_to_death": [0.0007, 0.008, 1]
+  }
+}
