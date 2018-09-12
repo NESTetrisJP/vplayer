@@ -9,7 +9,9 @@ language: node_js
 node_js:
   - "node"
 
-script: yarn build
+script:
+  - yarn build
+  - ./create_players_dist.sh
 
 deploy:
   provider: pages

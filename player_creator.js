@@ -89,6 +89,6 @@ for (let i = 0; i < 5; i++) {
   const sigmaRand = new NormalRandom(0.05, 0.02)
 
   const result = createProfile("Player Level " + i, muRand.next(), sigmaRand.next())
-  fs.writeFileSync(i + ".json", JSON.stringify(result))
+  fs.writeFileSync(`level_${i}.json`, JSON.stringify(result))
 }
 console.log("Wrote 5 json files assuming 2018 CTWC tournament")
