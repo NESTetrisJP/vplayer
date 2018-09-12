@@ -1,6 +1,6 @@
 {
   "name": "nes-tetris-vplayer",
-  "version": "0.0.0",
+  "version": "0.9.1",
   "description": "A virtual Nintendo NES Tetris (NTSC) player to compete with",
   "main": "index.js",
   "repository": "https://github.com/suitougreentea/nes-tetris-vplayer",

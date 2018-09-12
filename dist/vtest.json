@@ -1,0 +1,14 @@
+{
+  "name": "Test player",
+  "params": {
+    "use_drop": 0,
+    "lines_18_safe": [0.45, 0.15, 0.1, 0.3],
+    "lines_19_safe": [0.5, 0.2, 0.15, 0.15],
+    "lines_18_danger": [0.7, 0.15, 0.1, 0.05],
+    "lines_19_danger": [0.8, 0.1, 0.1, 0],
+    "lines_29": [0.8, 0.1, 0.1, 0],
+    "safe_to_danger": [0.035, 0.15, 0.8],
+    "danger_to_safe": [0.03, 0.02, 0],
+    "danger_to_death": [0.005, 0.025, 1]
+  }
+}

@@ -147,7 +147,8 @@ const getParams = window.location.search.substring(1).split("&").reduce((result,
   return result
 }, {})
 
-const debug = getParams["debug"] == "true"
+const debug = getParams["debug"]
+const debugNum = Math.floor(Number(getParams["num"]))
 const profileUrl = getParams["profile"]
 
 if (profileUrl) {
@@ -268,16 +269,21 @@ document.addEventListener("drop", e => {
   main.dropProfile(e)
 })
 
-if (debug) {
+if (debug == "detailed" || debug == "true") {
   document.addEventListener("keypress", (e) => {
     switch (e.key) {
       case "Enter":
         let log = ""
-        for (let k = 1; k <= 10; k++) {
+        for (let k = 1; k <= debugNum; k++) {
           const player = new Player(profile.params)
           while (!player.dead) player.step()
-          log += `st${k} <- c(${player.logScore.join(", ")})\n` +
-                 `lt${k} <- c(${player.logLines.join(", ")})\n`
+          if (debug == "detailed") {
+            log += `st${k} <- c(${player.logScore.join(", ")})\n` +
+              `lt${k} <- c(${player.logLines.join(", ")})\n`
+          }
+          if (debug == "true") {
+            log += `${player.score}/${player.lines}\n`
+          }
         }
         console.log(log)
       break
