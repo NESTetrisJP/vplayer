@@ -1,0 +1,1 @@
+body,html{height:100%}body{margin:0;color:#fff}#container{padding:8px;height:calc(100% - 16px);background-color:#000}#container.working{background-color:#333}#name{font-size:16px;text-align:center;background-color:hsla(0,0%,100%,.3)}#status.danger{color:#f44}#status.dead{color:#888}#lines{font-size:32px}#lines,#score{text-align:right}#score{font-size:56px}
