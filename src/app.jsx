@@ -2,6 +2,12 @@
 
 import { h, app } from "hyperapp"
 
+const travisBuildNumber = process.env.TRAVIS_BUILD_NUMBER
+import { version as packageVersion } from "../package.json"
+
+const version = `v${packageVersion} (Build ${travisBuildNumber ? travisBuildNumber : "number unknown"})`
+console.log(version)
+
 const startStack = -6 // Because players scarcely erase lines in the very beginning
 
 // stack speeds are lines/sec

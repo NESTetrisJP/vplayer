@@ -1,6 +1,7 @@
 .cache/
 node_modules
 yarn-error.log
+*.xlsx
 
 dist/*
 !dist/*.json
